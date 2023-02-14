@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/mystyle.css">
     <title>Register</title>
 </head>
 <body>
@@ -48,16 +49,16 @@
             <div>
                 <label>Payment:</label>
                 <select id="txtPay">
-                    <option disabled selected>--pay method--</option>
-                    <option>Card</option>
-                    <option>Cash</option>
-                    <option>Credit</option>
+                    <option disabled selected value="">--pay method--</option>
+                    <option value="card">Card</option>
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit</option>
                 </select>
             </div>
 
             <div>
-                <label id="txtColor">Color:</label>
-                <input type="color" id="txtEmail">
+                <label >Color:</label>
+                <input type="color" id="txtColor">
             </div>
             <button id="invisable">poof</button>
         </div>
@@ -68,6 +69,6 @@
     
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-
+<script src="/scripts/storeManeger.js"></script>
 <script src="/scripts/register.js"></script>
 </html>

@@ -11,17 +11,59 @@ function user(email,password,first,last,age,address,phone,pay,color){
     this.color=color;
 }
 function clearInput(){
-    inputEmail=$("#txtEmail").val("");
-    inputPass=$("#txtPassword").val("");
-    inputFirst=$("#txtFirst").val("");
-    inputLast=$("#txtLast").val("");
-    inputAge=$("#txtAge").val("");
-    inputAdd=$("#txtAddress").val("");
-    inputPhone=$("#txtPhone").val("");
-    inputPay=$("#txtPay").val("--pay method--");
-    inputColor=$("#txtColor").val("");
+    inputEmail=$("#txtEmail").val();
+    inputPass=$("#txtPassword").val();
+    inputFirst=$("#txtFirst").val();
+    inputLast=$("#txtLast").val();
+    inputAge=$("#txtAge").val();
+    inputAdd=$("#txtAddress").val();
+    inputPhone=$("#txtPhone").val();
+    inputPay=$("#txtPay").val();
+    inputColor=$("#txtColor").val();
 
 
+}
+function validation(user){
+    let valid=true;
+
+    if(user.email==""){
+        valid=false;
+        $("#txtEmail").addClass("alert-error");
+    }
+    if(user.password==""){
+        valid=false;
+        $("#txtPassword").addClass("alert-error");
+    }
+    if(user.first==""){
+        valid=false;
+        $("#txtFirst").addClass("alert-error");
+    }
+    if(user.last==""){
+        valid=false;
+        $("#txtLast").addClass("alert-error");
+    }
+    if(user.age==""){
+        valid=false;
+        $("#txtAge").addClass("alert-error");
+    }
+    if(user.address==""){
+        valid=false;
+        $("#txtAddress").addClass("alert-error");
+    }
+    if(user.phone==""){
+        valid=false;
+        $("#txtPhone").addClass("alert-error");
+    }
+    if(user.pay==null){
+        valid=false;
+        $("#txtPay").addClass("alert-error");
+    }
+    if(user.color=="#000000"){
+        valid=false;
+        $("#txtColor").addClass("alert-error");
+    }
+
+    return valid;
 }
 function register(){
     let inputEmail=$("#txtEmail").val();
@@ -36,11 +78,16 @@ function register(){
 
     let newUser = new user(inputEmail,inputPass,inputFirst,inputLast,inputAge,inputAdd,inputPhone,inputPay,inputColor);
 
+    if(validation(newUser)){
+        saveUser(newUser);
+
+    }
+
+    $("#invisable").click(clearInput);
     console.log(newUser);
 }
 
 function init(){
     $("#invisable").click(register);
-    $("#invisable").click(clearInput);
 }
 window.onload=init;
