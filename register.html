@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,17 @@
     <link rel="stylesheet" href="/styles/mystyle.css">
     <title>Register</title>
 </head>
+
 <body>
     <header>
-        <h1>Registration</h1>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/register.html">Register</a>
-        </nav>
-    </header>
+        <ul class="top">
+         <li class="title">User System</li>
+         <nav class="navi">
+             <li><a href="/index.html">Home</a></li>
+             <li><a href="/register.html">Register</a></li>
+         </nav>
+        </ul>
+     </header>
     <main>
         <h2>Add new user</h2>
         <div id="form">
@@ -44,7 +48,7 @@
             </div>
             <div>
                 <label>Phone #:</label>
-                <input type="text"id="txtPhone">
+                <input type="text" id="txtPhone">
             </div>
             <div>
                 <label>Payment:</label>
@@ -55,20 +59,20 @@
                     <option value="credit">Credit</option>
                 </select>
             </div>
-
             <div>
-                <label >Color:</label>
+                <label>Color:</label>
                 <input type="color" id="txtColor">
             </div>
             <button id="invisable">poof</button>
         </div>
     </main>
     <footer>
-        
+
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="/scripts/storeManeger.js"></script>
+    <script src="/scripts/register.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="/scripts/storeManeger.js"></script>
-<script src="/scripts/register.js"></script>
+
 </html>

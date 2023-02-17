@@ -1,5 +1,44 @@
-.alert-error{
+.alert-error {
     background-color: pink;
     border: 3px solid red;
-    
+
+}
+.hide{
+    display: none;
+}
+body {
+    background-color: rgb(50, 150, 250);
+}
+/* Nav Bar */
+.top{
+    background-color: blueviolet;
+    display: flex;
+    list-style-type: none;
+}
+
+
+.title{
+    font-family: sans-serif;
+    font-size: 50px;
+    background-color: blue;
+    width: 80%;
+}
+.navi{
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+}
+.navi a{
+    background-color: rgb(0, 255, 174);
+    font-size: 22px;
+    padding: 25px;
+    text-decoration: none;
+}
+ a:hover{
+    background-color: rgb(157, 83, 37);
+}
+
+/* main */
+main{
+    text-align: center;
 }
