@@ -1,0 +1,54 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    box-shadow: 15px 15px 20px darkblue;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 10%;
+    background-color: grey;
+}
+
+.clipboard {
+    box-shadow: 15px 15px 20px darkblue;
+    border-radius: 50px 50px 50px 50px;
+    border: solid 50px rgb(165, 87, 42);
+    background-color: rgb(165, 87, 42);
+    font-size: 22px;
+    padding-bottom: 300px;
+    overflow: hidden;
+}
+
+table {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+th {
+    padding: 20px;
+    text-align: left;
+    padding-left: 22px;
+    background-color: orange;
+    border: solid 3px black;
+}
+
+tr {
+    border: solid 3px black;
+}
+
+td {
+    background-color: rgb(247, 246, 246);
+    padding-left: 22px;
+
+}
+
+@media(max-width: 1010px) {
+    .clipboard {
+        width: 80%;
+    }
+}

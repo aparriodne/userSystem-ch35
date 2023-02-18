@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/mystyle.css">
+    <link rel="stylesheet" href="/styles/register.css">
     <title>Register</title>
 </head>
 
 <body>
     <header>
-        <ul class="top">
-         <li class="title">User System</li>
-         <nav class="navi">
-             <li><a href="/index.html">Home</a></li>
-             <li><a href="/register.html">Register</a></li>
-         </nav>
-        </ul>
-     </header>
+        <h1>Register</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/register.html">Register</a>
+            <a href="/user.html">Archives</a>
+        </nav>
+    </header>
     <main>
         <h2>Add new user</h2>
         <div id="form">
@@ -50,7 +50,7 @@
                 <label>Phone #:</label>
                 <input type="text" id="txtPhone">
             </div>
-            <div>
+            <div class="pay">
                 <label>Payment:</label>
                 <select id="txtPay">
                     <option disabled selected value="">--pay method--</option>
@@ -59,17 +59,13 @@
                     <option value="credit">Credit</option>
                 </select>
             </div>
-            <div>
+            <div class="color">
                 <label>Color:</label>
                 <input type="color" id="txtColor">
             </div>
-            <button id="invisable">poof</button>
+            <button id="sub">Submit</button>
         </div>
     </main>
-    <footer>
-
-    </footer>
-
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="/scripts/storeManeger.js"></script>
     <script src="/scripts/register.js"></script>

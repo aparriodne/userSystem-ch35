@@ -1,4 +1,9 @@
+/* invalid response */
 .alert-error {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 22px;
     background-color: pink;
     border: 3px solid red;
 
@@ -6,39 +11,37 @@
 .hide{
     display: none;
 }
+
+/* body */
 body {
     background-color: rgb(50, 150, 250);
 }
-/* Nav Bar */
-.top{
-    background-color: blueviolet;
-    display: flex;
-    list-style-type: none;
+
+/* header */
+header {
+    padding-top: 1px;
+    background-color: brown;
+    display:flex;
+    flex-direction: column;
+    border:solid 5px black;
 }
-
-
-.title{
-    font-family: sans-serif;
-    font-size: 50px;
-    background-color: blue;
+h1{
     width: 80%;
+    margin-left: 5%;
+    font-size: 70px;
+    font-family: sans-serif;
 }
-.navi{
+nav {
     display: flex;
-    margin: 10px;
-    overflow: hidden;
+    justify-content: flex-end;
 }
-.navi a{
-    background-color: rgb(0, 255, 174);
-    font-size: 22px;
-    padding: 25px;
+a {
+    border: 3px solid black;
+    float: right;
+    margin: 5px;
+    padding: 15px;
+    background-color: darkorange;
     text-decoration: none;
-}
- a:hover{
-    background-color: rgb(157, 83, 37);
-}
-
-/* main */
-main{
-    text-align: center;
+    font-size: 30px;
+    color: black;    
 }

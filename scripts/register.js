@@ -1,4 +1,3 @@
-// create a constructor for the users
 function user(email,password,first,last,age,address,phone,pay,color){
     this.email=email;
     this.password=password;
@@ -11,17 +10,9 @@ function user(email,password,first,last,age,address,phone,pay,color){
     this.color=color;
 }
 function clearInput(){
-    inputEmail=$("#txtEmail").val();
-    inputPass=$("#txtPassword").val();
-    inputFirst=$("#txtFirst").val();
-    inputLast=$("#txtLast").val();
-    inputAge=$("#txtAge").val();
-    inputAdd=$("#txtAddress").val();
-    inputPhone=$("#txtPhone").val();
-    inputPay=$("#txtPay").val();
-    inputColor=$("#txtColor").val();
-
-
+    $("input").val("");
+    $("select").val("");
+    $("#txtPassword").css("background-color","white");
 }
 function validation(user){
     let valid=true;
@@ -94,12 +85,12 @@ function register(){
 
     }
 
-    $("#invisable").click(clearInput);
-    console.log(newUser);
+    clearInput();
+
 }
 
 function init(){
-    $("#invisable").click(register);
+    $("#sub").click(register);
     $("#txtPassword").keyup(validatePass);
 }
 window.onload=init;
